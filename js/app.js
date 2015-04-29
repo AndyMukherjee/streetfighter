@@ -76,7 +76,7 @@ $(document) .ready(function(){
 
 	});
 
-	$('.sf').show(10000, 'swing',
+/*	$('.sf').show(10000, 'swing',
   function(){
             $(this).hide();
             $('.brought').show(10000, 'swing', function(){
@@ -90,9 +90,21 @@ $(document) .ready(function(){
                 	
                 });
             });
-    });
+    });*/
 
-
+  $('.sf').fadeIn(5000, function() {
+    $(this).fadeOut(2500, function() {
+      $('.brought').fadeIn(2000, function() {
+        $(this).fadeOut(2500, function() {
+          $('.logo').fadeIn(2000, function() {
+            $(this).fadeOut(2500, function() {
+              $('.click').fadeIn(2500);
+            });
+          })
+        })
+      })
+    })
+  })
 
 
 		
